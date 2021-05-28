@@ -1,0 +1,28 @@
+$bgcolor: #c3cfe2;
+$accentcolor: #686de0;
+$boxshadow: 0 16px 15px 5px rgba(51, 51, 51, 0.3);
+
+/* Social media colors */
+
+$blogcolor: #e17b77;
+$facebookcolor: #3b5998;
+$twittercolor: #00aced;
+$linkedincolor: #007bb6;
+$githubcolor: #333333;
+
+/* Flex & grid system */
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-content: $align;
+}
+
+@mixin grid($columns, $rows, $cgap, $rgap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  grid-column-gap: $cgap;
+  grid-row-gap: $rgap;
+}
